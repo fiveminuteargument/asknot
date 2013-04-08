@@ -55,7 +55,7 @@
             choices.push(shuffle(c));
         }
         $('#back')[0].style.display = group === 'proglang' ? 'none' : 'block';
-        $('#next')[0].style.display = group !== 'progland' && choices[choices.length - 1].length == 1 ? 'none' : 'block';
+        $('#next')[0].style.display = group !== 'proglang' && choices[choices.length - 1].length == 1 ? 'none' : 'block';
         $('.question', groupNode)[0].style.display = 'block';
         updateCurrentChoice(choiceIndex[choiceIndex.length - 1]);
     }
